@@ -1,0 +1,156 @@
+:root {
+  /*fonts*/
+  --font-main: "Lato", sans-serif;
+  --font-add: "Raleway", sans-serif;
+  /*theme colors*/
+  --c-main: #01996d;
+  --c-nav: #292929;
+  --c-text: #484848;
+  --c-bg: #245852;
+  --c-border: #d6d6d6;
+  /*const colors*/
+  --c-black: #000000;
+  --c-white: #ffffff;
+
+  --b-radius: 12px;
+  --b-radius-btn: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--font-main);
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.wrapper {
+  max-width: 1920px;
+  margin-inline: auto;
+  position: relative;
+}
+.container {
+  max-width: 1547px;
+  width: 100%;
+  margin-inline: auto;
+}
+.pd-x {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.title-primary {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 74px;
+  color: var(--c-main);
+  font-family: var(--font-add);
+}
+.title-secondary {
+  font-family: var(--font-add);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: var(--c-add);
+}
+.title-secondary.title-secondary_white {
+  color: var(--c-white);
+}
+.text-primary {
+  font-size: 20px;
+}
+.text-secondary {
+  font-size: 20px;
+  font-family: var(--font-main);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--c-text);
+}
+.header {
+  background: var(--c-white);
+  padding: 25px 0;
+  border-bottom: 1px solid var(--c-border);
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__ul {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  margin: 0;
+}
+
+.nav__li {
+  list-style: none;
+}
+
+.nav__a {
+  text-decoration: none;
+  color: var(--c-nav);
+}
+
+.header__buttons {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+.btn {
+  border-radius: var(--b-radius-btn);
+  display: inline-block;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  font-family: var(--font-main);
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.btn_link {
+  color: var(--c-black);
+}
+.btn_primary {
+  background: var(--c-main);
+  border: 1px solid var(--c-main);
+  padding: 13px 50px;
+  color: var(--c-white);
+}
+.main-screen {
+  height: 100vh;
+  margin-bottom: 170px;
+}
+.main-screen__wrapper {
+  display: flex;
+  height: 100%;
+}
+.main-screen__info {
+  flex: 0 1 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-screen__title {
+  margin-bottom: 30px;
+}
+
+.main-screen__desc {
+  margin-bottom: 53px;
+}
+
+.main-screen__btn {
+  padding: 20px 50px;
+}
+
+.main-screen__image {
+  position: absolute;
+  right: 0;
+}
