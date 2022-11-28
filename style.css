@@ -72,6 +72,7 @@ p {
   font-weight: 500;
   color: var(--c-text);
 }
+/*HEADER START*/
 .header {
   background: var(--c-white);
   padding: 25px 0;
@@ -144,6 +145,9 @@ p {
 .btn_primary:hover {
   color: var(--c-black);
 }
+/*HEADER END*/
+
+/*MAIN-SCREEN START*/
 .main-screen {
   height: 100vh;
   margin-bottom: 170px;
@@ -178,6 +182,9 @@ p {
   right: 0;
   z-index: 1;
 }
+/*MAIN-SCREEN END*/
+
+/*HOW START*/
 .how {
 }
 .how-header {
@@ -214,10 +221,6 @@ p {
 .how {
   padding-bottom: 392px;
 }
-.how__wrapper {
-}
-.how-header {
-}
 .how-steps {
   display: flex;
   gap: 66px;
@@ -250,6 +253,9 @@ p {
 .step__image img {
   max-width: 100%;
 }
+/*HOW END*/
+
+/*STORY START*/
 .story {
   background-color: var(--c-bg);
   padding: 229px 20px 177px 20px;
@@ -279,11 +285,13 @@ p {
   color: var(--c-white);
   margin-bottom: 55px;
 }
-
 .story__img img {
   max-width: 100%;
   cursor: pointer;
 }
+/*STORY END*/
+
+/*PRODUCT START*/
 .product {
   padding: 120px 0 242px 0;
 }
@@ -322,9 +330,11 @@ p {
   margin-bottom: 40px;
   max-width: 530px;
 }
+/*PRODUCT END*/
+
+/*FOOTER START*/
 .footer {
   background-color: var(--c-bg);
-
   padding: 95px 0 83px 0;
 }
 .footer__wrapper {
@@ -344,6 +354,8 @@ p {
   color: var(--c-white);
   font-weight: 600;
 }
+/*FOOTER END*/
+
 /*BREAKPOINT XL*/
 @media (max-width: 1200px) {
   .header__nav {
@@ -383,7 +395,6 @@ p {
   .step__image {
     width: 100%;
   }
-
   .step__image img {
     width: 100%;
     max-height: 350px;
@@ -452,7 +463,6 @@ p {
     line-height: 45px;
     margin-bottom: 15px;
   }
-
   .footer {
     padding: 30px 0 30px 0;
   }
@@ -498,7 +508,7 @@ p {
     padding: 60px 0 60px 0;
   }
 }
-
+/*STYLES FOR BURGER*/
 .menu-wrapper {
   width: 200px;
   height: 40px;
@@ -585,3 +595,4 @@ input:checked ~ .fourth {
     display: block;
   }
 }
+/*STYLES FOR BURGER END*/
