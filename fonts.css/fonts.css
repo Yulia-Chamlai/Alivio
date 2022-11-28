@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts.css/Lato-Bold") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts.css/Lato-Medium") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "LatoWebRegular";
+  src: url("/fonts.css/Lato-Regular") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts.css/Lato-Semibold") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
