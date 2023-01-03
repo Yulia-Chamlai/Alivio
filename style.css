@@ -34,7 +34,7 @@ p {
   max-width: 1920px;
   margin-inline: auto;
   position: relative;
-  padding: 0 207px 0 207px;
+  overflow: hidden;
 }
 .container {
   max-width: 1547px;
@@ -83,7 +83,12 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
+.header__wrapper a {
+  transition: 0.2s all ease-in-out;
+}
+.header__wrapper a:hover {
+  transform: translateY(-10px);
+}
 .nav__ul {
   display: flex;
   align-items: center;
@@ -131,9 +136,7 @@ p {
   transition: 0.3s all ease-in-out;
 }
 .btn_link:hover {
-  background: var(--c-main);
-  color: var(--c-white);
-  padding: 13px 30px;
+  transform: translateY(-10px);
 }
 .btn_primary {
   background: var(--c-main);
@@ -249,9 +252,20 @@ p {
 }
 .step__image {
   width: 100%;
+  transition: 0.2s all ease-in-out;
 }
+.step__image:hover {
+  transform: translateY(-10px);
+}
+
 .step__image img {
   max-width: 100%;
+}
+
+.step__image img:hover {
+  stroke: 2px green;
+  width: 100%;
+  height: 100%;
 }
 /*HOW END*/
 
@@ -301,6 +315,12 @@ p {
 }
 .product__img img {
   max-width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.product__img img:hover {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  cursor: pointer;
 }
 .product__info {
   flex: 0 1 584px;
@@ -343,6 +363,12 @@ p {
   align-items: center;
   margin-bottom: 20px;
 }
+.footer__wrapper a {
+  transition: 0.2s all ease-in-out;
+}
+.footer__wrapper a:hover {
+  transform: translateY(-10px);
+}
 
 .footer__nav .nav__ul {
   gap: 60px;
@@ -361,10 +387,13 @@ p {
   .header__nav {
     display: none;
   }
+  .btn {
+    display: none;
+  }
   .main-screen__info {
     justify-content: center;
     padding: 20px;
-    flex: 0 1 500px;
+    flex: 0 1 100%;
   }
   .main-screen__title,
   .main-screen__desc {
@@ -374,7 +403,7 @@ p {
   }
   .main-screen__image,
   .main-screen__image img {
-    width: 100%;
+    width: 105%;
   }
   .how {
     padding-bottom: 50px;
@@ -454,7 +483,6 @@ p {
   .main-screen__image {
     position: static;
     z-index: -1;
-    transform: translateX(40px);
   }
   .how-header__word,
   .main-screen__title,
@@ -568,7 +596,7 @@ label {
   transition: 0.3s all ease-in-out;
 }
 .burger__nav a:hover {
-  color: #200bde;
+  color: var(--c-main);
 }
 .burger__nav {
   display: none;
